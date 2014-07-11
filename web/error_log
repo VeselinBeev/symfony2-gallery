@@ -1,0 +1,14 @@
+[08-Jul-2014 19:25:33 Europe/Moscow] PHP Fatal error:  Class 'Admin\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:27:52 Europe/Moscow] PHP Fatal error:  Class 'Admin\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:48:29 Europe/Moscow] PHP Fatal error:  Class 'Gallery\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:32:16 Europe/Moscow] PHP Fatal error:  Class 'Gallery\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:37:08 Europe/Moscow] PHP Fatal error:  Class 'Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:48:34 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:48:40 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:50:34 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:50:35 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:51:50 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:52:55 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:52:56 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:53:02 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[11-Jul-2014 01:19:01 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in /home/miasto/public_html/path/app/autoload.php on line 9

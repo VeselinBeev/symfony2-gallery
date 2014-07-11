@@ -1,0 +1,20 @@
+[08-Jul-2014 19:26:34 Europe/Moscow] PHP Fatal error:  Class 'Admin\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:26:47 Europe/Moscow] PHP Fatal error:  Class 'Admin\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:40:55 Europe/Moscow] PHP Fatal error:  Class 'Gallery\ADMINBundle\ADMINBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:40:59 Europe/Moscow] PHP Fatal error:  Class 'Gallery\ADMINBundle\ADMINBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:41:19 Europe/Moscow] PHP Fatal error:  Class 'Gallery\ADMINBundle\ADMINBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:43:45 Europe/Moscow] PHP Fatal error:  Class 'Gallery\ADMINBundle\ADMINBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:47:11 Europe/Moscow] PHP Fatal error:  Class 'Gallery\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:48:19 Europe/Moscow] PHP Fatal error:  Class 'Gallery\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[08-Jul-2014 19:50:20 Europe/Moscow] PHP Fatal error:  Class 'Gallery\AdminBundle\AdminBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[10-Jul-2014 17:50:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
+[11-Jul-2014 01:18:24 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in /home/miasto/public_html/path/app/autoload.php on line 9
+[11-Jul-2014 01:19:28 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in /home/miasto/public_html/path/app/autoload.php on line 9
+[11-Jul-2014 13:39:28 Europe/Moscow] PHP Warning:  require_once(/home/miasto/public_html/path/bin/bootstrap.php.cache): failed to open stream: No such file or directory in /home/miasto/public_html/path/bin/console on line 10
+[11-Jul-2014 13:39:28 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required '/home/miasto/public_html/path/bin/bootstrap.php.cache' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/miasto/public_html/path/bin/console on line 10
+[11-Jul-2014 15:43:05 Europe/Moscow] PHP Fatal error:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: proc_open(): fork failed - Resource temporarily unavailable in /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php line 981' in /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:981
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\ErrorHandler->handle(2, 'proc_open(): fo...', '/home/miasto/pu...', 981, Array)
+#1 /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(981): proc_open('stty -a | grep ...', Array, NULL, NULL, NULL, Array)
+#2 /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(799): Symfony\Component\Console\Application->getSttyColumns()
+#3 /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(760): Symfony\Component\Console\Application->getTerminalDimensions( in /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php on line 981
