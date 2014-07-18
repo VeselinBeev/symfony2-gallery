@@ -2,13 +2,59 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-		
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+	{% block sidebar %}
+    <div>
+                <ul>
+                      <li>
+                          <a href="/path/web/app_dev.php/login">Home</a>
+                      </li>
+					  <li>
+                          <a href="/path/web/app_dev.php/profile/edit">Edit</a>
+                      </li>
+                      <li>
+                          <a href="/path/web/app_dev.php/profile">Profile</a>
+                      </li>
+                    <li>
+                        <a href="/path/web/app_dev.php/register">Register</a>
+                    </li>
+                    <li>
+                        <a href="/path/web/app_dev.php/logout">Logout</a>
+                    </li>
+                    //предстой да се направи проверка за логин на Админ
+                    <li>
+                        <a href="/path/web/app_dev.php/Admin/Admin_new">AdminRegistration</a>
+                    </li>
+                    <li>
+                        <a href="/path/web/app_dev.php/Admin/new">Admin</a>
+                    </li>
+
+                </ul>
+        </div>
+            {% endblock %}
+        <div>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                <a href="{{ path('fos_user_security_logout') }}">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+            {% else %}
+                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+            {% endif %}
+        </div>
+
+        {% for type, messages in app.session.flashBag.all %}
+            {% for message in messages %}
+                <div class="{{ type }}">
+                    {{ message|trans({}, 'FOSUserBundle') }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        <div>
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+        </div>
     </body>
 </html>

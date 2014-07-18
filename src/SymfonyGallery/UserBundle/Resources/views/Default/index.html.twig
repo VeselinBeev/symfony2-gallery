@@ -1,1 +1,32 @@
-Hello {{ name }}!
+{% extends '::base.html.twig' %}
+
+{% block title %}My cool blog posts{% endblock %}
+
+{% block body %}
+    {% for entry in blog_entries %}
+        <h2>{{ entry.title }}</h2>
+        <div>
+
+            <form action="/path/web/app_dev.php/Admin/new"  method="POST" class="fos_user_registration_register">
+                <div id="fos_user_registration_form"><div><label for="fos_user_registration_form_email" class="required">Email:</label>
+                        <input type="email" id="fos_user_registration_form_email" name="email" required="required" /></div><div>
+                        <label for="fos_user_registration_form_username" class="required">Username:</label>
+                        <input type="text" id="fos_user_registration_form_username" name="username" required="required" pattern=".{2,}" /></div>
+                    <div>
+                        <label for="fos_user_registration_form_plainPassword_first" class="required">Password:</label>
+                        <input type="password" id="fos_user_registration_form_plainPassword_first" name="password" required="required" />
+                    </div>
+                    <div>
+                        <label for="edit_seper_admin" >Super Admin</label>
+                        <input type="checkbox" id="edit_seper_admin" name="is_super_admin" value="1"  />
+                    </div>
+
+                </div>
+                <div>
+                    <input type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+        <p>{{ entry.body }}</p>
+    {% endfor %}
+{% endblock %}

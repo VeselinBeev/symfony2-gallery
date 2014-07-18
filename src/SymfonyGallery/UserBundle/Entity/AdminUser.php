@@ -1,16 +1,16 @@
 <?php
-// src/Acme/UserBundle/Entity/User.php
+//src/SymfonyGallery/UserBundle/Entity/AdminUser.php
 
 namespace SymfonyGallery\UserBundle\Entity;
 
-use FOS\UserBundle\Model\User as BaseUser;
+use FOS\UserBundle\Model\AdminUser as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="symfonygallery_user")
  */
-class User extends BaseUser
+class AdminUser extends BaseUser
 {
     /**
      * @ORM\Id

@@ -1,0 +1,33 @@
+#this is done via route annotations now
+#user_show:
+#   pattern:  /{id}/show
+#  defaults: { _controller: "UserBundle:user:show" }
+
+user_new:
+    pattern:  /Admin/new
+    defaults: { _controller: "UserBundle:User:new" }
+
+
+user_new_admin:
+    pattern:  /Admin/Admin_new
+    defaults: { _controller: "UserBundle:User:new" }
+
+
+user_create:
+    pattern:  /create
+    defaults: { _controller: "UserBundle:User:create" }
+    requirements: { _method: post }
+
+user_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "UserBundle:User:edit" }
+
+user_update:
+    pattern:  /Admin/{id}/update
+    defaults: { _controller: "UserBundle:User:update" }
+    requirements: { _method: post|put }
+
+user_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "UserBundle:User:delete" }
+    requirements: { _method: post|delete }

@@ -1,7 +1,0 @@
-parameters:
-#    front.example.class: SymfonyGallery\FrontBundle\Example
-
-services:
-#    front.example:
-#        class: %front.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

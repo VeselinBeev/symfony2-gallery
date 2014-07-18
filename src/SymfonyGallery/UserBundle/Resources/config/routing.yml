@@ -1,0 +1,2 @@
+user_bundle:
+    resource: "@UserBundle/Resources/config/routing/user.yml"

@@ -12,3 +12,29 @@
 [10-Jul-2014 17:52:56 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
 [10-Jul-2014 17:53:02 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/miasto/public_html/path/app/AppKernel.php on line 19
 [11-Jul-2014 01:19:01 Europe/Moscow] PHP Parse error:  syntax error, unexpected ',' in /home/miasto/public_html/path/app/autoload.php on line 9
+[15-Jul-2014 20:13:35 Europe/Moscow] PHP Fatal error:  Call to undefined function SymfonyGallery\UserBundle\Controller\getUsername() in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 20
+[15-Jul-2014 20:13:49 Europe/Moscow] PHP Fatal error:  Call to undefined method FOS\UserBundle\Doctrine\UserManager::getUsername() in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 20
+[15-Jul-2014 20:14:10 Europe/Moscow] PHP Fatal error:  Call to undefined method FOS\UserBundle\Doctrine\UserManager::getUsers() in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 20
+[16-Jul-2014 14:53:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected '}', expecting ';' or '{' in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 39
+[16-Jul-2014 14:53:41 Europe/Moscow] PHP Fatal error:  Call to undefined function SymfonyGallery\UserBundle\Controller\path() in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 25
+[16-Jul-2014 23:22:22 Europe/Moscow] PHP Fatal error:  Call to undefined method FOS\UserBundle\Doctrine\UserManager::getUser() in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 59
+[16-Jul-2014 23:22:42 Europe/Moscow] PHP Fatal error:  Call to undefined method FOS\UserBundle\Doctrine\UserManager::editUser() in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 59
+[16-Jul-2014 23:36:03 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:03 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:18 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:18 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:22 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:23 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:24 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:25 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:26 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:36:26 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$fos' (T_VARIABLE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 29
+[16-Jul-2014 23:38:58 Europe/Moscow] PHP Fatal error:  Class 'SymfonyGallery\UserBundle\Controller\DateTime' not found in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 27
+[17-Jul-2014 13:31:03 Europe/Moscow] PHP Fatal error:  Undefined constant 'Datetime' in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 27
+[17-Jul-2014 13:31:14 Europe/Moscow] PHP Fatal error:  Undefined constant 'Datetime' in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 27
+[17-Jul-2014 13:31:41 Europe/Moscow] PHP Fatal error:  Undefined constant 'Datetime' in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 27
+[17-Jul-2014 13:33:30 Europe/Moscow] PHP Fatal error:  Undefined constant 'DateTime' in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 27
+[17-Jul-2014 15:59:00 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 28
+[17-Jul-2014 15:59:03 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Controller/UserController.php on line 28

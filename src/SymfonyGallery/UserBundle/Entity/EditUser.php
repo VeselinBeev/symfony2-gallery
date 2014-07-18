@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="symfonygallery_user")
  */
-class User extends BaseUser
+class EditUser extends BaseUser
 {
     /**
      * @ORM\Id
