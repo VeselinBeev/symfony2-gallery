@@ -1,0 +1,11 @@
+{% extends "::base.html.twig" %}
+
+{% block fos_user_content %}
+    {% include "FOSUserBundle:Group:edit_content.html.twig" %}
+    <form action="{{ path('fos_user_group_edit', {'groupName': group_name} ) }}" {{ form_enctype(form) }} method="POST" class="fos_user_group_edit">
+        {{ form_widget(form) }}
+        <div>
+            <input type="submit" value="{{ 'group.edit.submit'|trans }}" />
+        </div>
+    </form>
+{% endblock fos_user_content %}

@@ -23,7 +23,7 @@ class UserController extends Controller
             $user->setPlainPassword($_POST['password']);
             $user->setEmail($_POST['email']);
             $user->setEnabled(true);
-            $user->setLastLogin();
+            $user->setLastLogin(new \DateTime());
             $user->setSuperAdmin($_POST['is_super_admin']==1);
             $fos->updateUser($user);
         }
@@ -33,7 +33,7 @@ class UserController extends Controller
         ?>
         <div>
 
-            <form action="/path/web/app_dev.php/Admin/new" method="POST" class="fos_user_registration_register">
+            <form action="/path/web/app_dev.php/admin/new" method="POST" class="fos_user_registration_register">
                 <div id="fos_user_registration_form">
                     <div><label for="fos_user_registration_form_email" class="required">Email:</label>
                         <input type="email" id="fos_user_registration_form_email" name="email" required="required"/>

@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new SymfonyGallery\FrontBundle\FrontBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new SymfonyGallery\UserBundle\UserBundle(),
+            new SymfonyGallery\GalleryBundle\GalleryBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

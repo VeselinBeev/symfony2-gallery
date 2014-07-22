@@ -4,12 +4,12 @@
 #  defaults: { _controller: "UserBundle:user:show" }
 
 user_new:
-    pattern:  /Admin/new
+    pattern:  /admin/new
     defaults: { _controller: "UserBundle:User:new" }
 
 
 user_new_admin:
-    pattern:  /Admin/Admin_new
+    pattern:  /admin/admin_new
     defaults: { _controller: "UserBundle:User:new" }
 
 
@@ -20,12 +20,12 @@ user_create:
 
 user_edit:
     pattern:  /{id}/edit
-    defaults: { _controller: "UserBundle:User:edit" }
+    defaults: { _controller: "UserBundle:EditUser:edit" }
 
 user_update:
-    pattern:  /Admin/{id}/update
-    defaults: { _controller: "UserBundle:User:update" }
-    requirements: { _method: post|put }
+    pattern:  /admin/update/{id}
+    defaults: { _controller: "UserBundle:EditUser:update" }
+
 
 user_delete:
     pattern:  /{id}/delete
