@@ -17,6 +17,11 @@ class UserController extends Controller
     {
         $fos = $this->get('fos_user.user_manager');
 
+
+        if($this->get('security.context')->getToken()->getUser()->getRoles()[0] != 'ROLE_SUPER_ADMIN') {
+            return $this->redirect('/login');
+        }
+
         if (isset($_POST['username'], $_POST['password'], $_POST['email'])) {
             $user = $fos->createUser();
             $user->setUsername($_POST['username']);
@@ -24,7 +29,11 @@ class UserController extends Controller
             $user->setEmail($_POST['email']);
             $user->setEnabled(true);
             $user->setLastLogin(new \DateTime());
-            $user->setSuperAdmin($_POST['is_super_admin']==1);
+
+            if($_POST['is_super_admin']) {
+                $user->setRoles(array('ROLE_SUPER_ADMIN'));
+            }
+
             $fos->updateUser($user);
         }
         echo '<pre>';
@@ -33,7 +42,7 @@ class UserController extends Controller
         ?>
         <div>
 
-            <form action="/path/web/app_dev.php/admin/new" method="POST" class="fos_user_registration_register">
+            <form method="POST" class="fos_user_registration_register">
                 <div id="fos_user_registration_form">
                     <div><label for="fos_user_registration_form_email" class="required">Email:</label>
                         <input type="email" id="fos_user_registration_form_email" name="email" required="required"/>

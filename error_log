@@ -18,3 +18,6 @@ Stack trace:
 #1 /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(981): proc_open('stty -a | grep ...', Array, NULL, NULL, NULL, Array)
 #2 /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(799): Symfony\Component\Console\Application->getSttyColumns()
 #3 /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(760): Symfony\Component\Console\Application->getTerminalDimensions( in /home/miasto/public_html/path/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php on line 981
+[22-Jul-2014 10:07:58 Europe/Moscow] PHP Fatal error:  Class 'FOS\UserBundle\Model\AdminUser' not found in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Entity/AdminUser.php on line 14
+[22-Jul-2014 10:08:58 Europe/Moscow] PHP Fatal error:  Class 'FOS\UserBundle\Model\AdminUser' not found in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Entity/AdminUser.php on line 14
+[22-Jul-2014 10:11:01 Europe/Moscow] PHP Fatal error:  Class 'FOS\UserBundle\Model\AdminUser' not found in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Entity/AdminUser.php on line 14

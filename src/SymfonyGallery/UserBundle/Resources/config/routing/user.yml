@@ -26,7 +26,6 @@ user_update:
     pattern:  /admin/update/{id}
     defaults: { _controller: "UserBundle:EditUser:update" }
 
-
 user_delete:
     pattern:  /{id}/delete
     defaults: { _controller: "UserBundle:User:delete" }

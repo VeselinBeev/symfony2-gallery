@@ -1,0 +1,3 @@
+gallery_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GalleryBundle:Default:index }

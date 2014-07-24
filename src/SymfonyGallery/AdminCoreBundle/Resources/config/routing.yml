@@ -1,3 +1,7 @@
-admin_core_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: AdminCoreBundle:Default:index }
+category_controller:
+    pattern: /category
+    defaults: { _controller: "AdminCoreBundle:Category:index" }
+
+category_show:
+    pattern: /category/show/{id}
+    defaults: { _controller: "AdminCoreBundle:Category:show" }

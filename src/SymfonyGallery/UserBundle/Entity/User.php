@@ -1,5 +1,5 @@
 <?php
-// src/Acme/UserBundle/Entity/User.php
+//src/Acme/UserBundle/Entity/User.php
 
 namespace SymfonyGallery\UserBundle\Entity;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="symfonygallery_user")
+ * @ORM\Table(name="user_table")
  */
 class User extends BaseUser
 {
