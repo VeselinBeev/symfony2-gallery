@@ -1,13 +1,13 @@
-{% extends '::base.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block crud %}
-    <h1>Category creation</h1>
+{% block picture %}
+    <h1>Picture creation</h1>
 
     {{ form(form) }}
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('category') }}">
+        <a href="{{ path('picture') }}">
             Back to the list
         </a>
     </li>

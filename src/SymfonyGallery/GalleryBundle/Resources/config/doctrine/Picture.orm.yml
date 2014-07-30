@@ -1,0 +1,25 @@
+SymfonyGallery\GalleryBundle\Entity\Picture:
+    type: entity
+    table: null
+    table: picture
+    readOnly: false
+    indexes:
+        name_index:
+            columns: [ pic_name ]
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        picName:
+            type: string
+            length: '50'
+            column: pic_name
+        comment:
+            type: text
+        userId:
+            type: integer
+            column: user_id
+    lifecycleCallbacks: {  }

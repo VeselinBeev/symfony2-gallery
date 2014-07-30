@@ -1,3 +1,7 @@
+gallery:
+    resource: "@GalleryBundle/Resources/config/routing.yml"
+    prefix:   /
+
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
@@ -17,9 +21,16 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
-category_f:
+category_a:
    resource: "@AdminCoreBundle/Resources/config/routing.yml"
 
 user:
    resource: "@UserBundle/Resources/config/routing.yml"
+
+folder_u:
+      resource: "@GalleryBundle/Resources/config/routing.yml"
+
+picture_u:
+      resource: "@GalleryBundle/Resources/config/routing/picture.yml"
+
 

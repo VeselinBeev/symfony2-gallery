@@ -17,11 +17,9 @@ class UserController extends Controller
     {
         $fos = $this->get('fos_user.user_manager');
 
-
         if($this->get('security.context')->getToken()->getUser()->getRoles()[0] != 'ROLE_SUPER_ADMIN') {
             return $this->redirect('/login');
         }
-
         if (isset($_POST['username'], $_POST['password'], $_POST['email'])) {
             $user = $fos->createUser();
             $user->setUsername($_POST['username']);
@@ -36,10 +34,12 @@ class UserController extends Controller
 
             $fos->updateUser($user);
         }
+
         echo '<pre>';
         print_r($fos->findUsers());
         echo '</pre>';
         ?>
+
         <div>
 
             <form method="POST" class="fos_user_registration_register">

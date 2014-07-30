@@ -21,10 +21,10 @@ class EditUserController extends Controller
 
             $manager->persist($user);
             $manager->flush();
-        
+
         ?>
         <div>
-<form action="/path/web/app_dev.php/profile//admin/update/{id}"  method="POST" class="fos_user_profile_edit">
+<form action="/admin/update/{id}"  method="POST" class="fos_user_profile_edit">
     <div id="fos_user_profile_form"><div><label for="fos_user_profile_form_username" class="required">Username:</label>
             <input type="text" id="fos_user_profile_form_username" name="fos_user_profile_form[username]" required="required"  value="" /></div>
         <div>

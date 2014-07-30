@@ -1,7 +1,30 @@
-category_controller:
-    pattern: /category
+category:
+    path:     /category
     defaults: { _controller: "AdminCoreBundle:Category:index" }
 
 category_show:
-    pattern: /category/show/{id}
+    path:     /category}/show/{id}
     defaults: { _controller: "AdminCoreBundle:Category:show" }
+
+category_new:
+    path:     /category/new
+    defaults: { _controller: "AdminCoreBundle:Category:new" }
+
+category_create:
+    path:     /category/create
+    defaults: { _controller: "AdminCoreBundle:Category:create" }
+    requirements: { _method: post }
+
+category_edit:
+    path:     /category/edit/{id}
+    defaults: { _controller: "AdminCoreBundle:Category:edit" }
+
+category_update:
+    path:     /category/update/{id}
+    defaults: { _controller: "AdminCoreBundle:Category:update" }
+    requirements: { _method: post|put }
+
+category_delete:
+    path:     /category/delete/{id}
+    defaults: { _controller: "AdminCoreBundle:Category:delete" }
+    requirements: { _method: post|delete }

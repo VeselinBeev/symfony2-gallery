@@ -1,0 +1,25 @@
+SymfonyGallery\GalleryBundle\Entity\UserFolder:
+    type: entity
+    table: null
+    table: userfolder
+    readOnly: false
+    indexes:
+        name_index:
+            columns: [ folder_name ]
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        folderName:
+            type: string
+            length: '50'
+            column: folder_name
+        description:
+            type: text
+        pictureId:
+            type: integer
+            column: picture_id
+    lifecycleCallbacks: {  }

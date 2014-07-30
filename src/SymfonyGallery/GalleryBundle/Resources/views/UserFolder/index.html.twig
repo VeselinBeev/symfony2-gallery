@@ -1,0 +1,45 @@
+{% extends '::base.html.twig' %}
+
+{% block folder %}
+    <h1>UserFolder list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Foldername</th>
+                <th>Description</th>
+                <th>Pictureid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('userfolder_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.folderName }}</td>
+                <td>{{ entity.description }}</td>
+                <td>{{ entity.pictureId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('userfolder_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('userfolder_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('userfolder_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

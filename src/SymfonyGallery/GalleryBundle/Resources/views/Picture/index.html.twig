@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block picture %}
+    <h1>Picture list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Picname</th>
+                <th>Comment</th>
+                <th>Userid</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('picture_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.picName }}</td>
+                <td>{{ entity.comment }}</td>
+                <td>{{ entity.userId }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('picture_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('picture_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('picture_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

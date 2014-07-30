@@ -21,3 +21,4 @@ Stack trace:
 [22-Jul-2014 10:07:58 Europe/Moscow] PHP Fatal error:  Class 'FOS\UserBundle\Model\AdminUser' not found in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Entity/AdminUser.php on line 14
 [22-Jul-2014 10:08:58 Europe/Moscow] PHP Fatal error:  Class 'FOS\UserBundle\Model\AdminUser' not found in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Entity/AdminUser.php on line 14
 [22-Jul-2014 10:11:01 Europe/Moscow] PHP Fatal error:  Class 'FOS\UserBundle\Model\AdminUser' not found in /home/miasto/public_html/path/src/SymfonyGallery/UserBundle/Entity/AdminUser.php on line 14
+[28-Jul-2014 15:18:15 Europe/Moscow] PHP Fatal error:  Class 'SymfonyGallery\GalleryBundle\GalleryBundle' not found in /home/miasto/public_html/path/app/AppKernel.php on line 23

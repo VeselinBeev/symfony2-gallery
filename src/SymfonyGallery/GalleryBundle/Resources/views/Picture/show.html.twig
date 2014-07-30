@@ -1,7 +1,7 @@
-{% extends '::base.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block crud %}
-    <h1>Category</h1>
+{% block picture %}
+    <h1>Picture</h1>
 
     <table class="record_properties">
         <tbody>
@@ -10,28 +10,28 @@
                 <td>{{ entity.id }}</td>
             </tr>
             <tr>
-                <th>Categoryname</th>
-                <td>{{ entity.categoryName }}</td>
+                <th>Picname</th>
+                <td>{{ entity.picName }}</td>
             </tr>
             <tr>
-                <th>Folderid</th>
-                <td>{{ entity.folderId }}</td>
+                <th>Comment</th>
+                <td>{{ entity.comment }}</td>
             </tr>
             <tr>
-                <th>Date</th>
-                <td>{{ entity.date|date('Y-m-d H:i:s') }}</td>
+                <th>Userid</th>
+                <td>{{ entity.userId }}</td>
             </tr>
         </tbody>
     </table>
 
         <ul class="record_actions">
     <li>
-        <a href="{{ path('category') }}">
+        <a href="{{ path('picture') }}">
             Back to the list
         </a>
     </li>
     <li>
-        <a href="{{ path('category_edit', { 'id': entity.id }) }}">
+        <a href="{{ path('picture_edit', { 'id': entity.id }) }}">
             Edit
         </a>
     </li>

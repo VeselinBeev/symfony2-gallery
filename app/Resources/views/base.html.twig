@@ -8,31 +8,40 @@
     <div>
                 <ul>
                       <li>
-                          <a href="/path/web/app_dev.php/login">Home</a>
+                          <a href="/login">Home</a>
                       </li>
 					  <li>
-                          <a href="/path/web/app_dev.php/profile/edit">Edit</a>
+                          <a href="/profile/edit">Edit</a>
                       </li>
                       <li>
-                          <a href="/path/web/app_dev.php/profile">Profile</a>
+                          <a href="/profile">Profile</a>
                       </li>
                     <li>
-                        <a href="/path/web/app_dev.php/register">Register</a>
+                        <a href="/register">Register</a>
                     </li>
                     <li>
-                        <a href="/path/web/app_dev.php/logout">Logout</a>
+                        <a href="/logout">Logout</a>
                     </li>
                     //предстой да се направи проверка за логин на Админ
                     <li>
-                        <a href="/path/web/app_dev.php/Admin/Admin_new">AdminRegistration</a>
+                        <a href="/Admin/Admin_new">AdminRegistration</a>
                     </li>
                     <li>
-                        <a href="/path/web/app_dev.php/Admin/new">Admin</a>
+                        <a href="/Admin/new">Admin</a>
                     </li>
 
                 </ul>
         </div>
             {% endblock %}
+
+
+    {% block crud %}
+    {% endblock %}
+    {% block folder %}
+    {% endblock %}
+    {% block picture %}
+    {% endblock %}
+
         <div>
             {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                 {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |

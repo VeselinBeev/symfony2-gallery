@@ -1,10 +1,10 @@
 <?php
 
-namespace SymfonyGallery\AdminCoreBundle\Tests\Controller;
+namespace SymfonyGallery\GalleryBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class CategoryControllerTest extends WebTestCase
+class PictureControllerTest extends WebTestCase
 {
     /*
     public function testCompleteScenario()
@@ -13,13 +13,13 @@ class CategoryControllerTest extends WebTestCase
         $client = static::createClient();
 
         // Create a new entry in the database
-        $crawler = $client->request('GET', '/category/');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /category/");
+        $crawler = $client->request('GET', '/picture/');
+        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /picture/");
         $crawler = $client->click($crawler->selectLink('Create a new entry')->link());
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
-            'symfonygallery_admincorebundle_category[field_name]'  => 'Test',
+            'symfonygallery_gallerybundle_picture[field_name]'  => 'Test',
             // ... other fields to fill
         ));
 
@@ -33,7 +33,7 @@ class CategoryControllerTest extends WebTestCase
         $crawler = $client->click($crawler->selectLink('Edit')->link());
 
         $form = $crawler->selectButton('Update')->form(array(
-            'symfonygallery_admincorebundle_category[field_name]'  => 'Foo',
+            'symfonygallery_gallerybundle_picture[field_name]'  => 'Foo',
             // ... other fields to fill
         ));
 

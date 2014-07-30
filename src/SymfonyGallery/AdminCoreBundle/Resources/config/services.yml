@@ -1,7 +1,0 @@
-parameters:
-#    admin_core.example.class: SymfonyGallery\AdminCoreBundle\Example
-
-services:
-#    admin_core.example:
-#        class: %admin_core.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

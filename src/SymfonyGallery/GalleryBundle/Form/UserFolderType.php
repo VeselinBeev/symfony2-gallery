@@ -1,12 +1,12 @@
 <?php
 
-namespace SymfonyGallery\AdminCoreBundle\Form;
+namespace SymfonyGallery\GalleryBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class CategoryType extends AbstractType
+class UserFolderType extends AbstractType
 {
         /**
      * @param FormBuilderInterface $builder
@@ -15,9 +15,9 @@ class CategoryType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('categoryName')
-            ->add('folderId')
-            ->add('date')
+            ->add('folderName')
+            ->add('description')
+            ->add('pictureId')
         ;
     }
     
@@ -27,7 +27,7 @@ class CategoryType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'SymfonyGallery\AdminCoreBundle\Entity\Category'
+            'data_class' => 'SymfonyGallery\GalleryBundle\Entity\UserFolder'
         ));
     }
 
@@ -36,6 +36,6 @@ class CategoryType extends AbstractType
      */
     public function getName()
     {
-        return 'symfonygallery_admincorebundle_category';
+        return 'symfonygallery_gallerybundle_userfolder';
     }
 }

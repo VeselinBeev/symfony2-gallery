@@ -5,46 +5,35 @@ namespace SymfonyGallery\AdminCoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="category")
+ * Category
  */
 class Category
 {
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="category_name", type="string", length=255)
      */
     private $categoryName;
 
     /**
      * @var integer
-     *
-     * @ORM\Column(name="author_id", type="integer")
      */
-    private $authorId;
+    private $folderId;
 
     /**
      * @var \DateTime
-     *
-     * @ORM\Column(name="created_at", type="datetime")
      */
-    private $createdAt;
+    private $date;
 
 
     /**
      * Get id
      *
-     * @return integer
+     * @return integer 
      */
     public function getId()
     {
@@ -67,7 +56,7 @@ class Category
     /**
      * Get categoryName
      *
-     * @return string
+     * @return string 
      */
     public function getCategoryName()
     {
@@ -75,48 +64,48 @@ class Category
     }
 
     /**
-     * Set authorId
+     * Set folderId
      *
-     * @param integer $authorId
+     * @param integer $folderId
      * @return Category
      */
-    public function setAuthorId($authorId)
+    public function setFolderId($folderId)
     {
-        $this->authorId = $authorId;
+        $this->folderId = $folderId;
 
         return $this;
     }
 
     /**
-     * Get authorId
+     * Get folderId
      *
-     * @return integer
+     * @return integer 
      */
-    public function getAuthorId()
+    public function getFolderId()
     {
-        return $this->authorId;
+        return $this->folderId;
     }
 
     /**
-     * Set createdAt
+     * Set date
      *
-     * @param \DateTime $createdAt
+     * @param \DateTime $date
      * @return Category
      */
-    public function setCreatedAt($createdAt)
+    public function setDate($date)
     {
-        $this->createdAt = $createdAt;
+        $this->date = $date;
 
         return $this;
     }
 
     /**
-     * Get createdAt
+     * Get date
      *
-     * @return \DateTime
+     * @return \DateTime 
      */
-    public function getCreatedAt()
+    public function getDate()
     {
-        return $this->createdAt;
+        return $this->date;
     }
 }
