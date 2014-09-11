@@ -177,3 +177,4 @@ Stack trace:
 #3 /home/miasto/public_html/path/var/bootstrap.php.cache(2047): appProdProjectContainer->getTwigService()
 #4 /home/miasto/public_html/path/var/cache/prod/appProdProjectContainer.php(910): Symfony\Component\DependencyInjection\Container->get('twig')
 #5 /home/miasto/public_html/path/var/bootstrap.php.cache(2047): appProdProjectContainer->getTemplatin in /home/miasto/public_html/path/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[04-Aug-2014 16:17:41 Europe/Moscow] PHP Fatal error:  Call to a member function getRoles() on a non-object in /home/miasto/public_html/path/src/SymfonyGallery/AdminCoreBundle/Controller/CategoryController.php on line 22
