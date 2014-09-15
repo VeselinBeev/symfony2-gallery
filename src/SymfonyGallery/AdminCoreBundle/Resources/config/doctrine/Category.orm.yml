@@ -17,9 +17,6 @@ SymfonyGallery\AdminCoreBundle\Entity\Category:
             type: string
             length: '50'
             column: category_name
-        folderId:
-            type: integer
-            column: folder_id
         date:
             type: date
             column: date

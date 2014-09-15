@@ -15,11 +15,11 @@ SymfonyGallery\GalleryBundle\Entity\UserFolder:
     fields:
         folderName:
             type: string
-            length: 255
+            length: '50'
             column: folder_name
         description:
             type: text
-        categoryId:
+        pictureId:
             type: integer
-            column: category_id
+            column: picture_id
     lifecycleCallbacks: {  }

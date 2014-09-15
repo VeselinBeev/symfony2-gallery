@@ -1,11 +1,11 @@
-SymfonyGallery\GalleryBundle\Entity\UserFolder:
+SymfonyGallery\GalleryBundle\Entity\Picture:
     type: entity
     table: null
-    table: userfolder
+    table: picture
     readOnly: false
     indexes:
         name_index:
-            columns: [ folder_name ]
+            columns: [ pic_name ]
     id:
         id:
             type: integer
@@ -13,13 +13,13 @@ SymfonyGallery\GalleryBundle\Entity\UserFolder:
             generator:
                 strategy: AUTO
     fields:
-        folderName:
+        picName:
             type: string
-            length: 255
-            column: folder_name
-        description:
+            length: '50'
+            column: pic_name
+        comment:
             type: text
-        categoryId:
+        userId:
             type: integer
-            column: category_id
+            column: user_id
     lifecycleCallbacks: {  }

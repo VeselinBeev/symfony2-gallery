@@ -1,0 +1,30 @@
+picture:
+    path:     /picture
+    defaults: { _controller: "GalleryBundle:Picture:index" }
+
+picture_show:
+    path:     /picture/show/{id}
+    defaults: { _controller: "GalleryBundle:Picture:show" }
+
+picture_new:
+    path:     /picture/new
+    defaults: { _controller: "GalleryBundle:Picture:new" }
+
+picture_create:
+    path:     /picture/create
+    defaults: { _controller: "GalleryBundle:Picture:create" }
+    requirements: { _method: post }
+
+picture_edit:
+    path:     /picture/edit/{id}
+    defaults: { _controller: "GalleryBundle:Picture:edit" }
+
+picture_update:
+    path:     /picture/update/{id}
+    defaults: { _controller: "GalleryBundle:Picture:update" }
+    requirements: { _method: post|put }
+
+picture_delete:
+    path:     /picture/delete/{id}
+    defaults: { _controller: "GalleryBundle:Picture:delete" }
+    requirements: { _method: post|delete }

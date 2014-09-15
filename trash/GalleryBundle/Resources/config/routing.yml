@@ -1,0 +1,31 @@
+userfolder:
+    path:     /folder
+    defaults: { _controller: "GalleryBundle:UserFolder:index" }
+
+userfolder_show:
+    path:     /folder/show/{id}
+    defaults: { _controller: "GalleryBundle:UserFolder:show" }
+
+userfolder_new:
+    path:     /folder/new
+    defaults: { _controller: "GalleryBundle:UserFolder:new" }
+
+userfolder_create:
+    path:     /folder/create
+    defaults: { _controller: "GalleryBundle:UserFolder:create" }
+    requirements: { _method: post }
+
+userfolder_edit:
+    path:     /folder/edit/{id}
+    defaults: { _controller: "GalleryBundle:UserFolder:edit" }
+
+userfolder_update:
+    path:     /folder/update/{id}
+    defaults: { _controller: "GalleryBundle:UserFolder:update" }
+    requirements: { _method: post|put }
+
+userfolder_delete:
+    path:     /folder/delete/{id}
+    defaults: { _controller: "GalleryBundle:UserFolder:delete" }
+    requirements: { _method: post|delete }
+

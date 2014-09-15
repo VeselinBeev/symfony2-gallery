@@ -15,9 +15,10 @@ class PictureType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('userId')
+            ->add('folderId')
             ->add('picName')
             ->add('comment')
-            ->add('userId')
         ;
     }
     

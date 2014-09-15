@@ -15,16 +15,6 @@ class Picture
     private $id;
 
     /**
-     * @var integer
-     */
-    private $userId;
-
-    /**
-     * @var integer
-     */
-    private $folderId;
-
-    /**
      * @var string
      */
     private $picName;
@@ -33,6 +23,11 @@ class Picture
      * @var string
      */
     private $comment;
+
+    /**
+     * @var integer
+     */
+    private $userId;
 
 
     /**
@@ -43,52 +38,6 @@ class Picture
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set userId
-     *
-     * @param integer $userId
-     * @return Picture
-     */
-    public function setUserId($userId)
-    {
-        $this->userId = $userId;
-
-        return $this;
-    }
-
-    /**
-     * Get userId
-     *
-     * @return integer 
-     */
-    public function getUserId()
-    {
-        return $this->userId;
-    }
-
-    /**
-     * Set folderId
-     *
-     * @param integer $folderId
-     * @return Picture
-     */
-    public function setFolderId($folderId)
-    {
-        $this->folderId = $folderId;
-
-        return $this;
-    }
-
-    /**
-     * Get folderId
-     *
-     * @return integer 
-     */
-    public function getFolderId()
-    {
-        return $this->folderId;
     }
 
     /**
@@ -135,5 +84,28 @@ class Picture
     public function getComment()
     {
         return $this->comment;
+    }
+
+    /**
+     * Set userId
+     *
+     * @param integer $userId
+     * @return Picture
+     */
+    public function setUserId($userId)
+    {
+        $this->userId = $userId;
+
+        return $this;
+    }
+
+    /**
+     * Get userId
+     *
+     * @return integer 
+     */
+    public function getUserId()
+    {
+        return $this->userId;
     }
 }

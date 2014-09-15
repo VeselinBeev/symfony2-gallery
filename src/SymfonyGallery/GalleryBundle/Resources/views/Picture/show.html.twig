@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends '::base.html.twig' %}
 
 {% block picture %}
     <h1>Picture</h1>
@@ -10,16 +10,20 @@
                 <td>{{ entity.id }}</td>
             </tr>
             <tr>
+                <th>Userid</th>
+                <td>{{ entity.userId }}</td>
+            </tr>
+            <tr>
+                <th>Folderid</th>
+                <td>{{ entity.folderId }}</td>
+            </tr>
+            <tr>
                 <th>Picname</th>
                 <td>{{ entity.picName }}</td>
             </tr>
             <tr>
                 <th>Comment</th>
                 <td>{{ entity.comment }}</td>
-            </tr>
-            <tr>
-                <th>Userid</th>
-                <td>{{ entity.userId }}</td>
             </tr>
         </tbody>
     </table>

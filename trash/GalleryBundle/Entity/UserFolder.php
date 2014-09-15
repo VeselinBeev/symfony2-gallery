@@ -27,7 +27,7 @@ class UserFolder
     /**
      * @var integer
      */
-    private $categoryId;
+    private $pictureId;
 
 
     /**
@@ -87,25 +87,25 @@ class UserFolder
     }
 
     /**
-     * Set categoryId
+     * Set pictureId
      *
-     * @param integer $categoryId
+     * @param integer $pictureId
      * @return UserFolder
      */
-    public function setCategoryId($categoryId)
+    public function setPictureId($pictureId)
     {
-        $this->categoryId = $categoryId;
+        $this->pictureId = $pictureId;
 
         return $this;
     }
 
     /**
-     * Get categoryId
+     * Get pictureId
      *
      * @return integer 
      */
-    public function getCategoryId()
+    public function getPictureId()
     {
-        return $this->categoryId;
+        return $this->pictureId;
     }
 }

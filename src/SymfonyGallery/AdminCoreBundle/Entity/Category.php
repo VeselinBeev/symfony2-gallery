@@ -19,10 +19,6 @@ class Category
      */
     private $categoryName;
 
-    /**
-     * @var integer
-     */
-    private $folderId;
 
     /**
      * @var \DateTime
@@ -61,29 +57,6 @@ class Category
     public function getCategoryName()
     {
         return $this->categoryName;
-    }
-
-    /**
-     * Set folderId
-     *
-     * @param integer $folderId
-     * @return Category
-     */
-    public function setFolderId($folderId)
-    {
-        $this->folderId = $folderId;
-
-        return $this;
-    }
-
-    /**
-     * Get folderId
-     *
-     * @return integer 
-     */
-    public function getFolderId()
-    {
-        return $this->folderId;
     }
 
     /**

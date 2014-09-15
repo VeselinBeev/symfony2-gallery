@@ -1,4 +1,4 @@
-{% extends '::base.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block picture %}
     <h1>Picture list</h1>
@@ -7,10 +7,9 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Userid</th>
-                <th>Folderid</th>
                 <th>Picname</th>
                 <th>Comment</th>
+                <th>Userid</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -18,10 +17,9 @@
         {% for entity in entities %}
             <tr>
                 <td><a href="{{ path('picture_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-                <td>{{ entity.userId }}</td>
-                <td>{{ entity.folderId }}</td>
                 <td>{{ entity.picName }}</td>
                 <td>{{ entity.comment }}</td>
+                <td>{{ entity.userId }}</td>
                 <td>
                 <ul>
                     <li>
